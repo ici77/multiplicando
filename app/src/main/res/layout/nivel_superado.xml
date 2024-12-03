@@ -1,0 +1,64 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nivel"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Animación Lottie -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"
+            app:lottie_fileName="bravo.json"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false" />
+
+        <!-- Mensaje de enhorabuena -->
+        <TextView
+            android:id="@+id/etiquetaEnhorabuena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enhorabuena"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            android:layout_below="@id/lottieAnimationView"
+            android:layout_marginTop="20dp"
+            android:gravity="center" />
+
+        <!-- Botón para continuar -->
+        <Button
+            android:id="@+id/botonContinuar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etiquetaEnhorabuena"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#1ED118"
+            android:padding="12dp"
+            android:text="@string/continuar"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Explicación del siguiente nivel -->
+        <TextView
+            android:id="@+id/explicacionSiguienteNivel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/explicacion_siguiente_nivel"
+            android:textSize="26dp"
+            android:textColor="#FFFFFF"
+            android:background="#800080"
+            android:padding="16dp"
+            android:layout_below="@id/botonContinuar"
+            android:layout_marginTop="20dp"
+            android:gravity="center" />
+    </RelativeLayout>
+</ScrollView>

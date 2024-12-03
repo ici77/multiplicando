@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Multiplicando</string>
+    <string name="selecciona_tablas">¿Qué tabla quieres practicar hoy?  :</string>
+    <string name="tabla_del_1">Tabla del 1</string>
+    <string name="tabla_del_2">Tabla del 2</string>
+    <string name="tabla_del_3">Tabla del 3</string>
+    <string name="tabla_del_4">Tabla del 4</string>
+    <string name="tabla_del_5">Tabla del 5</string>
+    <string name="tabla_del_6">Tabla del 6</string>
+    <string name="tabla_del_7">Tabla del 7</string>
+    <string name="tabla_del_8">Tabla del 8</string>
+    <string name="tabla_del_9">Tabla del 9</string>
+    <string name="tabla_del_10">Tabla del 10</string>
+    <string name="seleccionar">VAMOS</string>
+    <string name="jugar">JUGAR</string>
+    <string name="estrella_progreso">Estrella de progreso</string>
+    <string name="pregunta">¿Pregunta?</string>
+    <string name="cronometro_texto">Tiempo: 120s</string>
+    <string name="puntaje_inicial">Aciertos: 0 | Fallos: 0</string>
+    <string name="opcion1">Opción 1</string>
+    <string name="opcion2">Opción 2</string>
+    <string name="opcion3">Opción 3</string>
+    <string name="opcion4">Opción 4</string>
+    <string name="descripcion_portada">Imagen de portada con el logo de la aplicación</string>
+    <string name="enhorabuena">¡Enhorabuena!</string>
+    <string name="explicacion_siguiente_nivel">Ahora, necesitas conseguir 5 estrellas para pasar al siguiente nivel.</string>
+    <string name="continuar">Continuar</string>
+    <string name="titulo_reporte">Resultados del Juego</string>
+    <string name="nivel_alcanzado">Nivel alcanzado: 1</string>
+    <string name="mensaje_genial">¡Estás haciendo genial!</string>
+    <string name="aciertos_text">Aciertos: 0</string>
+    <string name="fallos_text">Fallos: 0</string>
+    <string name="diferencia_text">Diferencia: 0</string>
+    <string name="reiniciar">Jugar de nuevo</string>
+    <string name="salir">Salir</string>
+</resources>

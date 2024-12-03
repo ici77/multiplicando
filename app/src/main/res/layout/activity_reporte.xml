@@ -1,0 +1,180 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reporte"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Título del Reporte -->
+        <TextView
+            android:id="@+id/tituloReporteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_reporte"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Nivel alcanzado -->
+        <TextView
+            android:id="@+id/nivelAlcanzadoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nivel_alcanzado"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Estrellas de Ranking -->
+        <LinearLayout
+            android:id="@+id/estrellasLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <!-- Diez estrellas en fila -->
+            <ImageView
+                android:id="@+id/estrella1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/estrellasin"
+                android:contentDescription="@string/estrella_progreso" />
+
+            <ImageView
+                android:id="@+id/estrella2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/estrellasin"
+                android:contentDescription="@string/estrella_progreso" />
+
+            <ImageView
+                android:id="@+id/estrella3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/estrellasin"
+                android:contentDescription="@string/estrella_progreso" />
+
+            <ImageView
+                android:id="@+id/estrella4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/estrellasin"
+                android:contentDescription="@string/estrella_progreso" />
+
+            <ImageView
+                android:id="@+id/estrella5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/estrellasin"
+                android:contentDescription="@string/estrella_progreso" />
+
+            <ImageView
+                android:id="@+id/estrella6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/estrellasin"
+                android:contentDescription="@string/estrella_progreso" />
+
+            <ImageView
+                android:id="@+id/estrella7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/estrellasin"
+                android:contentDescription="@string/estrella_progreso" />
+
+            <ImageView
+                android:id="@+id/estrella8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/estrellasin"
+                android:contentDescription="@string/estrella_progreso" />
+
+            <ImageView
+                android:id="@+id/estrella9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/estrellasin"
+                android:contentDescription="@string/estrella_progreso" />
+
+            <ImageView
+                android:id="@+id/estrella10"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/estrellasin"
+                android:contentDescription="@string/estrella_progreso" />
+        </LinearLayout>
+
+        <!-- Mensaje dinámico -->
+        <TextView
+            android:id="@+id/mensajeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mensaje_genial"
+            android:textSize="25dp"
+            android:background="#800080"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:textColor="#FFFFFF" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"
+            app:lottie_fileName="fin.json"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false" />
+
+        <!-- Resultados -->
+        <TextView
+            android:id="@+id/aciertosTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aciertos_text"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/fallosTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fallos_text"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/diferenciaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/diferencia_text"
+            android:textSize="18sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botones -->
+        <Button
+            android:id="@+id/btnReiniciar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reiniciar"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#1ECA43"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/salir"
+            android:backgroundTint="#FF0000"
+            android:textColor="#000000" />
+    </LinearLayout>
+</ScrollView>
